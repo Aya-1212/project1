@@ -11,7 +11,7 @@ class appFirstScreen extends StatelessWidget {
             backgroundColor:  Colors.indigoAccent,
             leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu,color: Colors.black,)),
             centerTitle: true,
-            title: const Text("My First App"),
+            title: const Text("My App"),
             actions: [
               IconButton(onPressed: () {}, icon: const Icon(Icons.settings),color: Colors.black,)
             ],
