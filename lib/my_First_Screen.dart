@@ -8,12 +8,21 @@ class appFirstScreen extends StatelessWidget {
       appBar: PreferredSize(
           preferredSize: const Size.fromHeight(45),
           child: AppBar(
-            backgroundColor:  Colors.indigoAccent,
-            leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu,color: Colors.black,)),
+            backgroundColor: Colors.indigoAccent,
+            leading: IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.menu,
+                  color: Colors.black,
+                )),
             centerTitle: true,
             title: const Text("My App"),
             actions: [
-              IconButton(onPressed: () {}, icon: const Icon(Icons.settings),color: Colors.black,)
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.settings),
+                color: Colors.black,
+              )
             ],
           )),
       body: const Column(
@@ -24,7 +33,7 @@ class appFirstScreen extends StatelessWidget {
               radius: 80,
               backgroundImage: NetworkImage(
                   'https://cache.desktopnexus.com/thumbseg/2499/2499944-bigthumbnail.jpg')),
-           SizedBox(
+          SizedBox(
             height: 15,
           ),
           Text(
@@ -48,62 +57,28 @@ class appFirstScreen extends StatelessWidget {
             height: 35,
           ),
           
-              Row(
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+             crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+             
+              Column(
                 children: [
-                  SizedBox(
-                    width: 35,
-                  ),
                   Icon(
                     Icons.facebook_rounded,
-                    color: Colors.blueAccent,
+                    color: Colors.blue,
                     size: 30,
                   ),
                   SizedBox(
-                    width: 50,
-                  ),
-                  Text(
-                    "@AyaRadyElkady",
-                    style: TextStyle(color: Colors.white, fontSize: 18),
-                  ),
-                  SizedBox(
-                    width: 50,
-                  ),
-                  Icon(Icons.arrow_forward_ios,color: Colors.indigoAccent),
-                ],
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Row(
-                children: [
-                  SizedBox(
-                    width: 35,
+                    height: 15,
                   ),
                   Icon(
-                    Icons.camera_alt_rounded,
+                    Icons.camera_alt,
                     color: Colors.deepPurple,
                     size: 30,
                   ),
                   SizedBox(
-                    width: 50,
-                  ),
-                  Text(
-                    "@AyaRadyElkady",
-                    style: TextStyle(color: Colors.white, fontSize: 18),
-                  ),
-                  SizedBox(
-                    width: 50,
-                  ),
-                  Icon(Icons.arrow_forward_ios, color: Colors.indigoAccent),
-                ],
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Row(
-                children: [
-                  SizedBox(
-                    width: 35,
+                    height: 15,
                   ),
                   Icon(
                     Icons.snapchat_rounded,
@@ -111,48 +86,57 @@ class appFirstScreen extends StatelessWidget {
                     size: 30,
                   ),
                   SizedBox(
-                    width: 50,
-                  ),
-                  Text(
-                    "@AyaRadyElkady",
-                    style: TextStyle(color: Colors.white, fontSize: 18),
-                  ),
-                  SizedBox(
-                    width: 50,
-                  ),
-                  Icon(Icons.arrow_forward_ios, color: Colors.indigoAccent),
-                ],
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Row(
-                children: [
-                  SizedBox(
-                    width: 35,
+                    height: 15,
                   ),
                   Icon(
                     Icons.telegram_rounded,
                     color: Colors.blue,
                     size: 30,
                   ),
-                  SizedBox(
-                    width: 50,
-                  ),
-                  Text(
-                    "@AyaRadyElkady",
-                    style: TextStyle(color: Colors.white, fontSize: 18),
-                  ),
-                  SizedBox(
-                    width: 50,
-                  ),
-                  Icon(Icons.arrow_forward_ios, color: Colors.indigoAccent),
                 ],
               ),
+               SizedBox(
+                    width: 35,
+                  ),
+              Column(
+                children: [
+                  Text('@AyaRadyElkady',style: TextStyle(color: Colors.white,fontSize:20 )),
+                   SizedBox(
+                    height: 15,
+                  ),
+                  Text('@AyaRady',style: TextStyle(color: Colors.white,fontSize:20 )),
+                   SizedBox(
+                    height: 15,
+                  ),
+                  Text('@AyaRady4407',style: TextStyle(color: Colors.white,fontSize:20 )),
+                   SizedBox(
+                    height: 15,
+                  ),
+                  Text('@AyaRady00',style: TextStyle(color: Colors.white,fontSize:20 )),
+                ],
+              ),
+              SizedBox(
+                    width: 35,
+                  ),
+              Column(children: [
+                Icon(Icons.arrow_forward_ios,color: Colors.blueAccent,size: 25,),
+                SizedBox(
+                    height: 15,
+                  ),
+                Icon(Icons.arrow_forward_ios,color: Colors.blueAccent,size: 25,),
+                SizedBox(
+                    height: 15,
+                  ),
+                Icon(Icons.arrow_forward_ios,color: Colors.blueAccent,size: 25,),
+                SizedBox(
+                    height: 15,
+                  ),
+                Icon(Icons.arrow_forward_ios,color: Colors.blueAccent,size: 25,),
+              ],)
             ],
           )
-        
-      );
-    
+        ],
+      ),
+    );
   }
 }
